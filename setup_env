@@ -1,0 +1,5 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "Setting project root to $DIR"
+
+export VENV=${DIR}/env
+echo "Setting virtual environment to $VENV"

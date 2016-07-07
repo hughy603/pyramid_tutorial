@@ -15,13 +15,13 @@ pyvenv-3.5 --without-pip $VENV
 source $VENV/bin/activate
 
 #Fix Curl CA Certificates
-#http://askubuntu.com/questions/646594/how-to-fix-ca-cert-issues-with-curl-in-ubuntu-14-04
+http://askubuntu.com/questions/646594/how-to-fix-ca-cert-issues-with-curl-in-ubuntu-14-04
 
 # Install pip and setup tools
 curl https://bootstrap.pypa.io/get-pip.py | python
 
 #Create $VENV/bin/activate_this.py
-# Add content in https://github.com/jmcantrell/vim-virtualenv/issues/45
+Add content in https://github.com/jmcantrell/vim-virtualenv/issues/45
 
 # Install Pyramid
 pip install "pyramid==1.7"
@@ -29,3 +29,6 @@ pip install "pyramid==1.7"
 # Push to githup
 git commit -a -m "Initialized Pyramid Environment"
 git push origin master
+
+# Create Project
+pcreate --scaffold starter scaffolds
