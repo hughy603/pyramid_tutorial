@@ -32,3 +32,8 @@ git push origin master
 
 # Create Project
 pcreate --scaffold starter scaffolds
+cd scaffolds
+pip install -e .
+
+# Test Project
+Go to http://127.0.0.1:6543/ in web browser
