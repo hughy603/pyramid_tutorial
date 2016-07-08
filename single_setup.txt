@@ -1,2 +1,8 @@
 # Fix formatting
 ctrl-shift+r
+
+# Add new files to git
+git add .
+git status
+git commit -am 'reason for adding files'
+git push origin master
