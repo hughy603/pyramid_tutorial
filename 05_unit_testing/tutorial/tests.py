@@ -8,7 +8,7 @@ class TutorialViewTests(unittest.TestCase):
     self.config = testing.setUp()
 
   def tearDown(self):
-    testing.tearDown
+    testing.tearDown()
 
   def test_hello_world(self):
     from tutorial import hello_world
