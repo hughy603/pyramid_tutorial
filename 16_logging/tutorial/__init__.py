@@ -7,4 +7,7 @@ def main(global_config, **settings):
     config.add_route('home', '/')
     config.add_route('hello', '/howdy/{first}/{last}')
     config.scan('.views')
-    return config.make_wsgi_app()
+    app = config.make_wsgi_app()
+    from paste.translogger import TransLogger
+    app = TransLogger(app, setup_console_handler=False)
+    return app
