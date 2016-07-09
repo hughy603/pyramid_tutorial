@@ -1,0 +1,10 @@
+{% extends "base.jinja2" %}
+{% block content %}
+<p>Welcome, {{ view.full_name }}</p>
+<form method="POST"
+      action="{{ request.current_route_url() }}">
+    <input name="new_name"/>
+    <input type="submit" name="form.edit" value="Save"/>
+    <input type="submit" name="form.delete" value="Delete"/>
+</form>
+{% endblock %}
