@@ -1,0 +1,4 @@
+{% extends "base.jinja2" %}
+{% block content %}
+<p>Go to the <a href="{{ request.route_url('hello', first='jane', last='doe') }}">form</a>.</p>
+{% endblock %}
