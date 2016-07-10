@@ -1,0 +1,7 @@
+pyramid
+pyramid_jinja2
+paste
+deform
+sqlalchemy
+pyramid_tm
+zope.sqlalchemy

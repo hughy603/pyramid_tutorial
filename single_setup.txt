@@ -1,4 +1,5 @@
 # Fix formatting
+ctrl-shift+8
 ctrl-shift+r
 
 # Add new files to git

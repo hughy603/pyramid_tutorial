@@ -1,0 +1,1320 @@
+2016-07-09 01:37:42,034 DEBUG [tutorial.views][MainThread] Editing sd
+2016-07-09 01:40:54,920 DEBUG [tutorial.views][MainThread] Editing sd
+2016-07-09 01:44:15,363 DEBUG [tutorial.views][MainThread] Editing sd
+2016-07-09 01:45:38,610 DEBUG [tutorial.views][MainThread] Editing sd
+2016-07-09 01:46:06,043 DEBUG [tutorial.views][MainThread] Editing sd
+2016-07-09 02:00:05,773 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:00:19,977 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:00:23,551 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:00:24,212 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:00:24,657 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:00:25,071 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:00:25,427 DEBUG [tutorial.views][MainThread] In home view
+2016-07-09 02:30:15,322 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227227d5c7861315c7839375c7831375c725c7865315c786131645c2727&tb=139943938665552
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wiki_view.jinja2", line 7, in template
+    <li><a href="{{ request.route_url('wikipage_view', uid=page.uid) }">
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 189, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 871, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 616, in parse_tuple
+    args.append(parse())
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 390, in parse_expression
+    return self.parse_condexpr()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 395, in parse_condexpr
+    expr1 = self.parse_or()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 408, in parse_or
+    left = self.parse_and()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 417, in parse_and
+    left = self.parse_not()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 428, in parse_not
+    return self.parse_compare()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 432, in parse_compare
+    expr = self.parse_add()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 454, in parse_add
+    left = self.parse_sub()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 464, in parse_sub
+    left = self.parse_concat()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 474, in parse_concat
+    args = [self.parse_mul()]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 484, in parse_mul
+    left = self.parse_div()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 494, in parse_div
+    left = self.parse_floordiv()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 504, in parse_floordiv
+    left = self.parse_mod()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 514, in parse_mod
+    left = self.parse_pow()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 524, in parse_pow
+    left = self.parse_unary()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 543, in parse_unary
+    node = self.parse_postfix(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 672, in parse_postfix
+    node = self.parse_call(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 789, in parse_call
+    self.stream.expect('rparen')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 378, in expect
+    next(self)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 349, in __next__
+    self.current = next(self._iter)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 552, in wrap
+    for lineno, token, value in stream:
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 678, in tokeniter
+    filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2016-07-09 02:31:22,984 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227227d5c7861315c7839375c7831375c725c7865315c786131645c2727&tb=139943934890672
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wiki_view.jinja2", line 5, in template
+    <li><a href="{{ request.route_url('wikipage_view', uid=page.uid) }">
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 189, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 871, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 616, in parse_tuple
+    args.append(parse())
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 390, in parse_expression
+    return self.parse_condexpr()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 395, in parse_condexpr
+    expr1 = self.parse_or()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 408, in parse_or
+    left = self.parse_and()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 417, in parse_and
+    left = self.parse_not()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 428, in parse_not
+    return self.parse_compare()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 432, in parse_compare
+    expr = self.parse_add()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 454, in parse_add
+    left = self.parse_sub()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 464, in parse_sub
+    left = self.parse_concat()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 474, in parse_concat
+    args = [self.parse_mul()]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 484, in parse_mul
+    left = self.parse_div()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 494, in parse_div
+    left = self.parse_floordiv()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 504, in parse_floordiv
+    left = self.parse_mod()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 514, in parse_mod
+    left = self.parse_pow()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 524, in parse_pow
+    left = self.parse_unary()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 543, in parse_unary
+    node = self.parse_postfix(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 672, in parse_postfix
+    node = self.parse_call(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 789, in parse_call
+    self.stream.expect('rparen')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 378, in expect
+    next(self)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 349, in __next__
+    self.current = next(self._iter)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 552, in wrap
+    for lineno, token, value in stream:
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 678, in tokeniter
+    filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2016-07-09 02:31:47,894 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227227d5c7861315c7839375c7831375c725c7865315c786131645c2727&tb=139943930300904
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wiki_view.jinja2", line 7, in template
+    <li><a href="{{ request.route_url('wikipage_view', uid=page.uid) }">
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 189, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 871, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 616, in parse_tuple
+    args.append(parse())
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 390, in parse_expression
+    return self.parse_condexpr()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 395, in parse_condexpr
+    expr1 = self.parse_or()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 408, in parse_or
+    left = self.parse_and()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 417, in parse_and
+    left = self.parse_not()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 428, in parse_not
+    return self.parse_compare()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 432, in parse_compare
+    expr = self.parse_add()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 454, in parse_add
+    left = self.parse_sub()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 464, in parse_sub
+    left = self.parse_concat()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 474, in parse_concat
+    args = [self.parse_mul()]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 484, in parse_mul
+    left = self.parse_div()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 494, in parse_div
+    left = self.parse_floordiv()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 504, in parse_floordiv
+    left = self.parse_mod()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 514, in parse_mod
+    left = self.parse_pow()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 524, in parse_pow
+    left = self.parse_unary()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 543, in parse_unary
+    node = self.parse_postfix(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 672, in parse_postfix
+    node = self.parse_call(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 789, in parse_call
+    self.stream.expect('rparen')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 378, in expect
+    next(self)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 349, in __next__
+    self.current = next(self._iter)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 552, in wrap
+    for lineno, token, value in stream:
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 678, in tokeniter
+    filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2016-07-09 02:32:37,050 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/add
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227227d5c7861315c7839375c7831375c725c7865315c786131645c2727&tb=139943927007160
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 283, in template_loader
+    return self.environment.get_template(name)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 250, in get_source
+    raise TemplateNotFound(name=template, message=message)
+jinja2.exceptions.TemplateNotFound: wikipage_addedit.jinja2; searchpath=['/work/workspace/pyramid_tutorial/18_forms/tutorial']
+2016-07-09 02:33:23,122 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62273d6e765c7831633f5c7864356d675c7861637727&tb=140511542906272
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wiki_view.jinja2", line 7, in template
+    <li><a href="{{ request.route_url('wikipage_view', uid=page.uid) }">
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 189, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 871, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 616, in parse_tuple
+    args.append(parse())
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 390, in parse_expression
+    return self.parse_condexpr()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 395, in parse_condexpr
+    expr1 = self.parse_or()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 408, in parse_or
+    left = self.parse_and()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 417, in parse_and
+    left = self.parse_not()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 428, in parse_not
+    return self.parse_compare()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 432, in parse_compare
+    expr = self.parse_add()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 454, in parse_add
+    left = self.parse_sub()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 464, in parse_sub
+    left = self.parse_concat()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 474, in parse_concat
+    args = [self.parse_mul()]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 484, in parse_mul
+    left = self.parse_div()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 494, in parse_div
+    left = self.parse_floordiv()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 504, in parse_floordiv
+    left = self.parse_mod()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 514, in parse_mod
+    left = self.parse_pow()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 524, in parse_pow
+    left = self.parse_unary()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 543, in parse_unary
+    node = self.parse_postfix(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 672, in parse_postfix
+    node = self.parse_call(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 789, in parse_call
+    self.stream.expect('rparen')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 378, in expect
+    next(self)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 349, in __next__
+    self.current = next(self._iter)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 552, in wrap
+    for lineno, token, value in stream:
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 678, in tokeniter
+    filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2016-07-09 02:42:37,852 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/add
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574852289928
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wikipage_addedit.jinja2", line 14, in template
+    <p>{{ structure: form }}</p>
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 872, in subparse
+    self.stream.expect('variable_end')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 374, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got ':'
+2016-07-09 02:42:44,010 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/100
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574851376744
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 283, in template_loader
+    return self.environment.get_template(name)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 250, in get_source
+    raise TemplateNotFound(name=template, message=message)
+jinja2.exceptions.TemplateNotFound: wikipage_view.jinja2; searchpath=['/work/workspace/pyramid_tutorial/18_forms/tutorial']
+2016-07-09 02:43:06,657 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/add
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574849484448
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wikipage_addedit.jinja2", line 14, in template
+    <p>{{ structure: form }}</p>
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 872, in subparse
+    self.stream.expect('variable_end')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 374, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got ':'
+2016-07-09 02:44:57,703 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/add
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574847523696
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 265, in __call__
+    return template.render(system)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wikipage_addedit.jinja2", line 1, in top-level template code
+    {% extends "base.jinja2" %}
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/base.jinja2", line 10, in top-level template code
+    {% block content %}{% endblock %}
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wikipage_addedit.jinja2", line 14, in block "content"
+    <p>{{ form.structure() }}</p>
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'structure'
+2016-07-09 02:47:32,121 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/add
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574846473328
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wikipage_addedit.jinja2", line 14, in template
+    <p>{{ form|structure }}</p>
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 515, in _generate
+    return generate(source, self, name, filename, defer_init=defer_init)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/compiler.py", line 62, in generate
+    generator.visit(node)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/compiler.py", line 849, in visit_Template
+    self.blockvisit(block.body, block_frame)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/compiler.py", line 1353, in visit_Output
+    self.visit(argument, frame)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/compiler.py", line 1565, in visit_Filter
+    self.fail('no filter named %r' % node.name, node.lineno)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/compiler.py", line 427, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: no filter named 'structure'
+2016-07-09 02:51:33,030 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/103
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574843508496
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 283, in template_loader
+    return self.environment.get_template(name)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 250, in get_source
+    raise TemplateNotFound(name=template, message=message)
+jinja2.exceptions.TemplateNotFound: wikipage_view.jinja2; searchpath=['/work/workspace/pyramid_tutorial/18_forms/tutorial']
+2016-07-09 02:58:26,961 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/100
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=6227374b5c786361725c786533455c7839335c7839635c7862345c78613227&tb=140574842876424
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 465, in rendered_view
+    request, result, view_inst, context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 264, in __call__
+    template = self.template_loader()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_jinja2/__init__.py", line 279, in template_loader
+    return self.environment.get_template(name_with_package)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/wikipage_view.jinja2", line 12, in template
+    <p>{{ structure: page.body }}</p>
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/parser.py", line 872, in subparse
+    self.stream.expect('variable_end')
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/jinja2/lexer.py", line 374, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got ':'
+2016-07-09 03:06:27,313 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/103
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62275c7866345c7838345f5c7839662b5d5c7861655c7839362d5c78663827&tb=140249022953624
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 442, in rendered_view
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/views.py", line 76, in wikipage_view
+    page = pages[uid]
+KeyError: '103'
+2016-07-09 03:07:34,307 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/100/delete
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62275c7866345c7838345f5c7839662b5d5c7861655c7839362d5c78663827&tb=140249022240136
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 413, in viewresult_to_response
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/views.py", line 82, in wikipage_delete
+    del d[key]
+NameError: name 'd' is not defined
+2016-07-09 03:07:51,088 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/100/delete
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62275c783133366b5c7861355c783937625c78643244495c78656527&tb=140386421452928
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 413, in viewresult_to_response
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/18_forms/tutorial/views.py", line 82, in wikipage_delete
+    del pages[key]
+NameError: name 'key' is not defined
+2016-07-09 03:43:31,845 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/102/edit
+traceback url: http://localhost:6543/_debug_toolbar/exception?tb=140291488672680&token=62277b5c7839643a5c7865335c7830355c7864616f5c7838395c7831362227
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 442, in rendered_view
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/19_databases/tutorial/views.py", line 115, in wikipage_edit
+    page.title = appstruct['title']
+AttributeError: 'dict' object has no attribute 'title'
+2016-07-09 04:08:52,319 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-09 04:08:52,319 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:08:52,320 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-09 04:08:52,320 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:08:52,321 INFO  [sqlalchemy.engine.base.Engine][MainThread] PRAGMA table_info("wikipages")
+2016-07-09 04:08:52,321 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:08:52,322 INFO  [sqlalchemy.engine.base.Engine][MainThread] 
+CREATE TABLE wikipages (
+	uid INTEGER NOT NULL, 
+	title TEXT, 
+	body TEXT, 
+	PRIMARY KEY (uid), 
+	UNIQUE (title)
+)
+
+
+2016-07-09 04:08:52,322 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:08:52,384 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-09 04:08:52,387 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-09 04:08:52,388 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-09 04:08:52,388 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('Root', '<p>Root</p>')
+2016-07-09 04:08:52,388 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-09 04:15:37,304 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-09 04:15:37,304 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:15:37,305 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-09 04:15:37,305 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:15:37,306 INFO  [sqlalchemy.engine.base.Engine][MainThread] PRAGMA table_info("wikipages")
+2016-07-09 04:15:37,306 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:15:37,307 INFO  [sqlalchemy.engine.base.Engine][MainThread] 
+CREATE TABLE wikipages (
+	uid INTEGER NOT NULL, 
+	title TEXT, 
+	body TEXT, 
+	PRIMARY KEY (uid), 
+	UNIQUE (title)
+)
+
+
+2016-07-09 04:15:37,308 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:15:37,415 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-09 04:15:37,418 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-09 04:15:37,419 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-09 04:15:37,419 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('Root', '<p>Root</p>')
+2016-07-09 04:15:37,420 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-09 04:20:40,728 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-09 04:20:40,728 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:20:40,729 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-09 04:20:40,729 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:20:40,730 INFO  [sqlalchemy.engine.base.Engine][MainThread] PRAGMA table_info("wikipages")
+2016-07-09 04:20:40,730 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:20:40,731 INFO  [sqlalchemy.engine.base.Engine][MainThread] 
+CREATE TABLE wikipages (
+	uid INTEGER NOT NULL, 
+	title TEXT, 
+	body TEXT, 
+	PRIMARY KEY (uid), 
+	UNIQUE (title)
+)
+
+
+2016-07-09 04:20:40,731 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-09 04:20:40,814 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-09 04:20:40,817 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-09 04:20:40,818 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-09 04:20:40,818 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('Root', '<p>Root</p>')
+2016-07-09 04:20:40,819 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-10 01:11:24,093 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:11:24,093 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:11:24,094 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:11:24,094 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:11:24,095 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:11:24,096 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:11:24,096 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:11:24,098 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:11:29,538 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:11:29,539 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:11:29,540 INFO  [sqlalchemy.engine.base.Engine][MainThread] (1,)
+2016-07-10 01:11:29,540 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:11:29,543 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/1
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62275c7862345c786336705c7861315c7864654b5c7862395c786231345c78653027&tb=140065107613512
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 101, in tm_tween
+    reraise(*exc_info)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/compat.py", line 15, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 83, in tm_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 442, in rendered_view
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/19_databases/tutorial/views.py", line 102, in wikipage_view
+    return dict(page=self.get_page())
+TypeError: 'Page' object is not callable
+2016-07-10 01:11:38,157 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:11:38,158 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-10 01:11:38,158 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('dfas', '<p>dfddssdf</p>')
+2016-07-10 01:11:38,160 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.title = ?
+2016-07-10 01:11:38,160 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('dfas',)
+2016-07-10 01:11:38,161 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-10 01:11:38,398 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:11:38,399 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:11:38,399 INFO  [sqlalchemy.engine.base.Engine][MainThread] (2,)
+2016-07-10 01:11:38,400 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:11:38,403 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/2
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62275c7862345c786336705c7861315c7864654b5c7862395c786231345c78653027&tb=140065103289200
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 101, in tm_tween
+    reraise(*exc_info)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/compat.py", line 15, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 83, in tm_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 442, in rendered_view
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/19_databases/tutorial/views.py", line 102, in wikipage_view
+    return dict(page=self.get_page())
+TypeError: 'Page' object is not callable
+2016-07-10 01:12:11,801 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:12:11,801 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-10 01:12:11,802 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('dfas', '<p>dfddssdf</p>')
+2016-07-10 01:12:11,802 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:12:11,808 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/add
+traceback url: http://localhost:6543/_debug_toolbar/exception?token=62275c7862345c786336705c7861315c7864654b5c7862395c786231345c78653027&tb=140065104245704
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: wikipages.title
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 101, in tm_tween
+    reraise(*exc_info)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/compat.py", line 15, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 83, in tm_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 442, in rendered_view
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/19_databases/tutorial/views.py", line 93, in wikipage_add
+    page = DBSession.query(Page).filter_by(title=new_title).one()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/query.py", line 2718, in one
+    ret = list(self)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/query.py", line 2760, in __iter__
+    self.session._autoflush()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 1303, in _autoflush
+    util.raise_from_cause(e)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 1293, in _autoflush
+    self.flush()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely) (sqlite3.IntegrityError) UNIQUE constraint failed: wikipages.title [SQL: 'INSERT INTO wikipages (title, body) VALUES (?, ?)'] [parameters: ('dfas', '<p>dfddssdf</p>')]
+2016-07-10 01:12:50,739 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:12:50,739 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:12:50,744 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:12:50,744 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:12:50,745 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:12:50,746 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-10 01:12:50,746 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('sdA', '<p>DSAsda</p>')
+2016-07-10 01:12:50,748 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.title = ?
+2016-07-10 01:12:50,748 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('sdA',)
+2016-07-10 01:12:50,749 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-10 01:12:50,980 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:12:50,981 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:12:50,981 INFO  [sqlalchemy.engine.base.Engine][MainThread] (3,)
+2016-07-10 01:12:50,987 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:12:53,310 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:12:53,311 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:12:53,311 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:12:53,312 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:12:54,467 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:12:54,468 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:12:54,469 INFO  [sqlalchemy.engine.base.Engine][MainThread] (1,)
+2016-07-10 01:12:54,470 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:01,471 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:01,472 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:13:01,472 INFO  [sqlalchemy.engine.base.Engine][MainThread] (1,)
+2016-07-10 01:13:01,473 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:01,475 ERROR [pyramid_debugtoolbar][MainThread] Exception at http://localhost:6543/1/delete
+traceback url: http://localhost:6543/_debug_toolbar/exception?tb=139831160883184&token=622767305c7839355c7863345c7831345c7838307a5c7863315e5c78313727
+Traceback (most recent call last):
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/toolbar.py", line 209, in toolbar_tween
+    response = _handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_debugtoolbar/panels/performance.py", line 57, in resource_timer_handler
+    result = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 62, in excview_tween
+    reraise(*attrs['exc_info'])
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/compat.py", line 148, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 101, in tm_tween
+    reraise(*exc_info)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/compat.py", line 15, in reraise
+    raise value
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid_tm/__init__.py", line 83, in tm_tween
+    response = handler(request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/router.py", line 158, in handle_request
+    view_name
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/view.py", line 547, in _call_view
+    response = view_callable(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 413, in viewresult_to_response
+    result = view(context, request)
+  File "/work/workspace/pyramid_tutorial/env/lib/python3.5/site-packages/pyramid/viewderivers.py", line 123, in _class_requestonly_view
+    response = getattr(inst, attr)()
+  File "/work/workspace/pyramid_tutorial/19_databases/tutorial/views.py", line 106, in wikipage_delete
+    DBSession.delete(self.get_page())
+TypeError: 'Page' object is not callable
+2016-07-10 01:13:19,717 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:13:19,717 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:19,718 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:13:19,719 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:19,719 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:19,720 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:13:19,720 INFO  [sqlalchemy.engine.base.Engine][MainThread] (1,)
+2016-07-10 01:13:19,723 INFO  [sqlalchemy.engine.base.Engine][MainThread] DELETE FROM wikipages WHERE wikipages.uid = ?
+2016-07-10 01:13:19,723 INFO  [sqlalchemy.engine.base.Engine][MainThread] (1,)
+2016-07-10 01:13:19,724 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-10 01:13:19,827 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:19,828 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:13:19,828 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:19,829 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:21,687 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:21,688 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:13:21,689 INFO  [sqlalchemy.engine.base.Engine][MainThread] (3,)
+2016-07-10 01:13:21,695 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:23,281 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:23,282 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:13:23,282 INFO  [sqlalchemy.engine.base.Engine][MainThread] (3,)
+2016-07-10 01:13:23,283 INFO  [sqlalchemy.engine.base.Engine][MainThread] DELETE FROM wikipages WHERE wikipages.uid = ?
+2016-07-10 01:13:23,284 INFO  [sqlalchemy.engine.base.Engine][MainThread] (3,)
+2016-07-10 01:13:23,284 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-10 01:13:23,343 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:23,344 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:13:23,344 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:23,345 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:33,663 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:33,663 INFO  [sqlalchemy.engine.base.Engine][MainThread] INSERT INTO wikipages (title, body) VALUES (?, ?)
+2016-07-10 01:13:33,664 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('my page', '<p>1235</p>')
+2016-07-10 01:13:33,665 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.title = ?
+2016-07-10 01:13:33,665 INFO  [sqlalchemy.engine.base.Engine][MainThread] ('my page',)
+2016-07-10 01:13:33,666 INFO  [sqlalchemy.engine.base.Engine][MainThread] COMMIT
+2016-07-10 01:13:33,883 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:33,884 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages 
+WHERE wikipages.uid = ?
+2016-07-10 01:13:33,884 INFO  [sqlalchemy.engine.base.Engine][MainThread] (3,)
+2016-07-10 01:13:33,886 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:36,052 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:36,053 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:13:36,053 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:36,054 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:43,139 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:13:43,139 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:43,140 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2016-07-10 01:13:43,140 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:43,141 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:43,142 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:13:43,142 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:43,143 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
+2016-07-10 01:13:45,958 INFO  [sqlalchemy.engine.base.Engine][MainThread] BEGIN (implicit)
+2016-07-10 01:13:45,959 INFO  [sqlalchemy.engine.base.Engine][MainThread] SELECT wikipages.uid AS wikipages_uid, wikipages.title AS wikipages_title, wikipages.body AS wikipages_body 
+FROM wikipages ORDER BY wikipages.title
+2016-07-10 01:13:45,959 INFO  [sqlalchemy.engine.base.Engine][MainThread] ()
+2016-07-10 01:13:45,960 INFO  [sqlalchemy.engine.base.Engine][MainThread] ROLLBACK
