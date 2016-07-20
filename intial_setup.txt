@@ -37,3 +37,6 @@ pip install -e .
 
 # Test Project
 Go to http://127.0.0.1:6543/ in web browser
+
+git branch test_branch
+git checkout test_branch
